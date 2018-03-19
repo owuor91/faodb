@@ -14,11 +14,11 @@ public class DbConstants {
   public static final String ACRES = "acres";
   public static final String LOCATION = "location";
 
-  public static final String CREATE_TABLE = "CREATE_TABLE "+ DbConstants.TABLE_NAME + "("
-      + DbConstants.ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-      + DbConstants.NAME + " TEXT,"
-      + DbConstants.AGE + " INTEGER,"
-      + DbConstants.ACRES + " NUMERIC,"
+  public static final String CREATE_TABLE = "CREATE TABLE "+ DbConstants.TABLE_NAME + "("
+      + DbConstants.ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+      + DbConstants.NAME + " TEXT, "
+      + DbConstants.AGE + " INTEGER, "
+      + DbConstants.ACRES + " NUMERIC, "
       + DbConstants.LOCATION + " TEXT"
       + ")";
   public static final String SELECT_ALL = "SELECT * FROM ";

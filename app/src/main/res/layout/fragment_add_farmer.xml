@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="io.github.owuor91.faodb.ui.AddFarmerFragment"
+    android:layout_marginLeft="@dimen/defaultMargin"
+    android:layout_marginRight="@dimen/defaultMargin"
+    >
+
+  <EditText
+      android:id="@+id/etFarmerName"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/defaultMargin"
+      android:inputType="text"
+      android:hint="@string/name"
+      />
+
+  <EditText
+      android:id="@+id/etFarmerAge"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/defaultMargin"
+      android:inputType="number"
+      android:hint="@string/age"
+      />
+
+  <EditText
+      android:id="@+id/etFarmerAcres"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/defaultMargin"
+      android:inputType="numberDecimal"
+      android:hint="@string/acres"
+      />
+
+  <EditText
+      android:id="@+id/etFarmerLocation"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/defaultMargin"
+      android:inputType="text"
+      android:hint="@string/location"
+      />
+
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="ADD FARMER"
+      android:textAllCaps="true"
+      android:id="@+id/btnAddFarmer"/>
+</LinearLayout>

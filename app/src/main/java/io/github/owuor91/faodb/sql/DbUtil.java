@@ -16,8 +16,8 @@ public class DbUtil extends SQLiteOpenHelper {
   private static final int DATABASE_VERSION = 1;
   private static final String DATABASE_NAME = DbConstants.DB_NAME;
 
-  public DbUtil(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
-    super(context, name, factory, version);
+  public DbUtil(Context context) {
+    super(context, DbConstants.DB_NAME, null, DATABASE_VERSION);
   }
 
   @Override public void onCreate(SQLiteDatabase sqLiteDatabase) {
