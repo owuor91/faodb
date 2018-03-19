@@ -5,23 +5,6 @@ package io.github.owuor91.faodb.sql;
  */
 
 public class Farmer {
-  public static final String TABLE= "farmers";
-
-  public static final String ID = "id";
-  public static final String NAME = "name";
-  public static final String AGE = "age";
-  public static final String ACRES = "acres";
-  public static final String LOCATION = "location";
-
-  public static final String CREATE_TABLE = "CREATE_TABLE "+ TABLE + "("
-      + ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-      + NAME + " TEXT,"
-      + AGE + " INTEGER,"
-      + ACRES + " NUMERIC,"
-      + LOCATION + " TEXT,"
-      + ")";
-
-
   private int id;
   private String name;
   private int age;
