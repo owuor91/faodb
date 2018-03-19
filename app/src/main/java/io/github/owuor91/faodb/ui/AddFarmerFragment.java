@@ -69,5 +69,9 @@ public class AddFarmerFragment extends Fragment {
     dbUtil.addFarmer(farmer);
 
     Toast.makeText(getActivity().getBaseContext(), "Farmer Added Succesfully", Toast.LENGTH_SHORT).show();
+    getFragmentManager().beginTransaction()
+        .replace(R.id.fragmentContainer, new FarmersListFragment())
+        .addToBackStack(null)
+        .commit();
   }
 }
